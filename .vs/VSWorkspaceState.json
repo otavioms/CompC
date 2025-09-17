@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\ConsoleApp1",
+    "\\ConsoleApp1\\Data",
     "\\ConsoleApp1\\Helpers"
   ],
-  "SelectedNode": "\\ConsoleApp1\\Helpers\\ValidadorDeAlfabetoECadeia.cs",
+  "SelectedNode": "\\ConsoleApp1\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

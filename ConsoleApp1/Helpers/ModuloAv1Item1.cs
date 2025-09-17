@@ -2,7 +2,7 @@
 
 namespace ConsoleApp1.Helpers
 {
-    public static class ValidadorDeAlfabetoECadeia
+    public static class ModuloAv1Item1
     {
         // Alfabeto Σ = {a, b}
         private static readonly char[] AlfabetoSigma = { 'a', 'b' };
