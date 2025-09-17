@@ -5,21 +5,22 @@ Boolean continuar = true;
 while (continuar)
 {
     Console.Clear();
-    Console.WriteLine("---------------");
-    Console.WriteLine("MENU DE OPÇÕES");
-    Console.WriteLine("---------------");
-
-    Console.WriteLine("1   - Validador de Alfabeto");
-    Console.WriteLine("2   - Em construção");
-    Console.WriteLine("3   - Em construção");
-    Console.WriteLine("4   - Em construção");
-    Console.WriteLine("5   - Em construção");
-    Console.WriteLine("6   - Em construção");
-    Console.WriteLine("7   - Em construção");
-    Console.WriteLine("8   - Em construção");
-    Console.WriteLine("9   - Em construção");
-    Console.WriteLine("10  - Em construção");
-    Console.WriteLine("0   - Sair");
+    Console.WriteLine("--------------------------------");
+    Console.WriteLine("Projeto Toolkit (versao simples)");
+    Console.WriteLine("--------------------------------");
+    Console.WriteLine("---- AV1 ----");
+    Console.WriteLine("1 - Verificar alfabeto e cadeia (Sigma={a,b})");
+    Console.WriteLine("2 - Classificador T/I/N por JSON");
+    Console.WriteLine("3 - Decisor: termina com 'b'?");
+    Console.WriteLine("4 - Avaliador proposicional (P,Q,R)");
+    Console.WriteLine("5 - Reconhecedor: L_par_a e a b*");
+    Console.WriteLine("---- AV2 ----");
+    Console.WriteLine("6 - Problema x instancia por JSON");
+    Console.WriteLine("7 - Decisores: L_fim_b e L_mult3_b");
+    Console.WriteLine("8 - Reconhecedor que pode nao terminar (a^i\r\nb^i)");
+    Console.WriteLine("9 - Detector ingenuo de loop");
+    Console.WriteLine("10 - Simulador AFD simples (termina com 'b')");
+    Console.WriteLine("0 - Sair");
 
     Console.Write("Informe uma opção: ");
     string opcao = Console.ReadLine(); 
@@ -29,34 +30,34 @@ while (continuar)
     switch (opcaoNumerica)
             {
         case 1:
-            ValidadorDeAlfabeto.ValidarAlfabeto();
+            ValidadorDeAlfabetoECadeia.ValidarAlfabetoECadeia();
             break;
         case 2:
-            Console.WriteLine("Opcao 2 selecionada");
+            Console.WriteLine("Ferramenta em construção");
             break;
         case 3:
-            Console.WriteLine("Opcao 3 selecionada");
+            Console.WriteLine("Ferramenta em construção");
             break;
         case 4:
-            Console.WriteLine("Opcao 4 selecionada");
+            Console.WriteLine("Ferramenta em construção");
             break;
         case 5:
-            Console.WriteLine("Opcao 5 selecionada");
+            Console.WriteLine("Ferramenta em construção");
             break;
         case 6:
-            Console.WriteLine("Opcao 6 selecionada");
+            Console.WriteLine("Ferramenta em construção");
             break;
         case 7:
-            Console.WriteLine("Opcao 7 selecionada");
+            Console.WriteLine("Ferramenta em construção");
             break;
         case 8:
-            Console.WriteLine("Opcao 8 selecionada");
+            Console.WriteLine("Ferramenta em construção");
             break;
         case 9:
-            Console.WriteLine("Opcao 9 selecionada");
+            Console.WriteLine("Ferramenta em construção");
             break;
         case 10:
-            Console.WriteLine("Opcao 10 selecionada");
+            Console.WriteLine("Ferramenta em construção");
             break;
         case 0:
             continuar = false;

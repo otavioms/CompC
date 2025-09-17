@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\faculdade\\8\\comp_c\\aula_02\\ConsoleApp1\\",
+  "WorkspaceRootPath": "C:\\faculdade\\8\\CompC\\trabalho\\CompC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AD10476E-5D67-4FE4-9E2B-88CAB082B024}|ConsoleApp1\\ConsoleApp1.csproj|c:\\faculdade\\8\\comp_c\\aula_02\\consoleapp1\\consoleapp1\\helpers\\validadordealfabeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD10476E-5D67-4FE4-9E2B-88CAB082B024}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\helpers\\validadordealfabeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD10476E-5D67-4FE4-9E2B-88CAB082B024}|ConsoleApp1\\ConsoleApp1.csproj|c:\\faculdade\\8\\compc\\trabalho\\compc\\consoleapp1\\helpers\\numeroprimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD10476E-5D67-4FE4-9E2B-88CAB082B024}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\helpers\\numeroprimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD10476E-5D67-4FE4-9E2B-88CAB082B024}|ConsoleApp1\\ConsoleApp1.csproj|c:\\faculdade\\8\\comp_c\\aula_02\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AD10476E-5D67-4FE4-9E2B-88CAB082B024}|ConsoleApp1\\ConsoleApp1.csproj|c:\\faculdade\\8\\compc\\trabalho\\compc\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD10476E-5D67-4FE4-9E2B-88CAB082B024}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD10476E-5D67-4FE4-9E2B-88CAB082B024}|ConsoleApp1\\ConsoleApp1.csproj|c:\\faculdade\\8\\compc\\trabalho\\compc\\consoleapp1\\helpers\\validadordealfabeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD10476E-5D67-4FE4-9E2B-88CAB082B024}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\helpers\\validadordealfabeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +22,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\faculdade\\8\\comp_c\\aula_02\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "DocumentMoniker": "C:\\faculdade\\8\\CompC\\trabalho\\CompC\\ConsoleApp1\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
-              "ToolTip": "C:\\faculdade\\8\\comp_c\\aula_02\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "ToolTip": "C:\\faculdade\\8\\CompC\\trabalho\\CompC\\ConsoleApp1\\Program.cs",
               "RelativeToolTip": "ConsoleApp1\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-13T22:45:32.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ValidadorDeAlfabeto.cs",
-              "DocumentMoniker": "C:\\faculdade\\8\\comp_c\\aula_02\\ConsoleApp1\\ConsoleApp1\\Helpers\\ValidadorDeAlfabeto.cs",
+              "DocumentMoniker": "C:\\faculdade\\8\\CompC\\trabalho\\CompC\\ConsoleApp1\\Helpers\\ValidadorDeAlfabeto.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Helpers\\ValidadorDeAlfabeto.cs",
-              "ToolTip": "C:\\faculdade\\8\\comp_c\\aula_02\\ConsoleApp1\\ConsoleApp1\\Helpers\\ValidadorDeAlfabeto.cs",
+              "ToolTip": "C:\\faculdade\\8\\CompC\\trabalho\\CompC\\ConsoleApp1\\Helpers\\ValidadorDeAlfabeto.cs",
               "RelativeToolTip": "ConsoleApp1\\Helpers\\ValidadorDeAlfabeto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-13T23:10:52.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NumeroPrimo.cs",
+              "DocumentMoniker": "C:\\faculdade\\8\\CompC\\trabalho\\CompC\\ConsoleApp1\\Helpers\\NumeroPrimo.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Helpers\\NumeroPrimo.cs",
+              "ToolTip": "C:\\faculdade\\8\\CompC\\trabalho\\CompC\\ConsoleApp1\\Helpers\\NumeroPrimo.cs",
+              "RelativeToolTip": "ConsoleApp1\\Helpers\\NumeroPrimo.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T22:42:22.232Z",
               "EditorCaption": ""
             }
           ]
