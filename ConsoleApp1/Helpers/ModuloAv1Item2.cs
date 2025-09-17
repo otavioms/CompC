@@ -172,19 +172,19 @@ namespace ConsoleApp1.Helpers
 			// Feedback baseado na performance
 			if (percentualAcerto >= 80)
 			{
-				Console.WriteLine("🎉 Excelente desempenho!");
+				Console.WriteLine("Excelente desempenho!");
 			}
 			else if (percentualAcerto >= 60)
 			{
-				Console.WriteLine("👍 Bom desempenho!");
+				Console.WriteLine("Bom desempenho!");
 			}
 			else if (percentualAcerto >= 40)
 			{
-				Console.WriteLine("📚 Continue estudando!");
+				Console.WriteLine("Continue estudando!");
 			}
 			else
 			{
-				Console.WriteLine("💪 Precisa revisar os conceitos!");
+				Console.WriteLine("Precisa revisar os conceitos!");
 			}
 
 			Console.WriteLine();

@@ -1,0 +1,42 @@
+[
+  {
+    "Descricao": "Ordenar uma lista de números",
+    "RespostaCorreta": "T"
+  },
+  {
+    "Descricao": "Encontrar o caminho mais curto em um grafo",
+    "RespostaCorreta": "T"
+  },
+  {
+    "Descricao": "Problema da Mochila (versão decisão)",
+    "RespostaCorreta": "I"
+  },
+  {
+    "Descricao": "Problema do Caixeiro Viajante",
+    "RespostaCorreta": "I"
+  },
+  {
+    "Descricao": "Satisfatibilidade Booleana (SAT)",
+    "RespostaCorreta": "I"
+  },
+  {
+    "Descricao": "Problema da Parada (Halting Problem)",
+    "RespostaCorreta": "N"
+  },
+  {
+    "Descricao": "Determinar se dois programas são equivalentes",
+    "RespostaCorreta": "N"
+  },
+  {
+    "Descricao": "Busca linear em um array",
+    "RespostaCorreta": "T"
+  },
+  {
+    "Descricao": "Coloração de grafos com k cores",
+    "RespostaCorreta": "I"
+  },
+  {
+    "Descricao": "Determinar se uma linguagem é decidível",
+    "RespostaCorreta": "N"
+  }
+]

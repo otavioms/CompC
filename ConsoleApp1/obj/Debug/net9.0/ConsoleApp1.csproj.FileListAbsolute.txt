@@ -27,3 +27,4 @@ C:\faculdade\8\CompC\trabalho\CompC\ConsoleApp1\obj\Debug\net9.0\refint\ConsoleA
 C:\faculdade\8\CompC\trabalho\CompC\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.pdb
 C:\faculdade\8\CompC\trabalho\CompC\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.genruntimeconfig.cache
 C:\faculdade\8\CompC\trabalho\CompC\ConsoleApp1\obj\Debug\net9.0\ref\ConsoleApp1.dll
+C:\faculdade\8\CompC\trabalho\CompC\ConsoleApp1\bin\Debug\net9.0\Data\problemas-tin.json
