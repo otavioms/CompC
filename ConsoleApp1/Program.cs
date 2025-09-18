@@ -1,4 +1,5 @@
-﻿using ConsoleApp1.Helpers;
+﻿using System;
+using ConsoleApp1.Helpers;
 
 Boolean continuar = true;
 
@@ -23,12 +24,18 @@ while (continuar)
     Console.WriteLine("0 - Sair");
 
     Console.Write("Informe uma opção: ");
-    string opcao = Console.ReadLine(); 
-
-    int opcaoNumerica = Convert.ToInt32(opcao);
+    string? opcao = Console.ReadLine();
+    int opcaoNumerica;
+    if (string.IsNullOrWhiteSpace(opcao) || !int.TryParse(opcao, out opcaoNumerica))
+    {
+        Console.WriteLine("Opção inválida! Digite um número.");
+        Console.WriteLine("Pressione qualquer tecla para continuar...");
+        Console.ReadKey();
+        continue;
+    }
 
     switch (opcaoNumerica)
-            {
+    {
         case 1:
             ModuloAv1Item1.ValidarAlfabetoECadeia();
             break;
@@ -42,7 +49,7 @@ while (continuar)
             Console.WriteLine("Ferramenta em construção");
             break;
         case 5:
-            Console.WriteLine("Ferramenta em construção");
+            ModuloAv1Item5.ExecutarReconhecedor();
             break;
         case 6:
             Console.WriteLine("Ferramenta em construção");
