@@ -28,7 +28,7 @@ while (continuar)
     int opcaoNumerica;
     if (string.IsNullOrWhiteSpace(opcao) || !int.TryParse(opcao, out opcaoNumerica))
     {
-        Console.WriteLine("Opção inválida. Digite um número.");
+        Console.WriteLine("Opção inválida! Digite um número.");
         Console.WriteLine("Pressione qualquer tecla para continuar...");
         Console.ReadKey();
         continue;

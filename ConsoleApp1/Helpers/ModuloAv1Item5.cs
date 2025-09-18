@@ -9,9 +9,9 @@ namespace ConsoleApp1.Helpers
         public static void ExecutarReconhecedor()
         {
             Console.Clear();
-            Console.WriteLine("------------------------------");
+            Console.WriteLine("-------------------------------");
             Console.WriteLine("RECONHECEDOR DE LINGUAGENS");
-            Console.WriteLine("------------------------------");
+            Console.WriteLine("-------------------------------");
             Console.WriteLine("Alfabeto Σ = {a, b}");
             Console.WriteLine();
             Console.WriteLine("Escolha a linguagem:");
