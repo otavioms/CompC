@@ -53,24 +53,36 @@ while (continuar)
             break;
         case 6:
             Console.WriteLine("Ferramenta em construção");
+            Console.WriteLine("Pressione qualquer tecla para continuar...");
+            Console.ReadKey();
             break;
         case 7:
             Console.WriteLine("Ferramenta em construção");
+            Console.WriteLine("Pressione qualquer tecla para continuar...");
+            Console.ReadKey();
             break;
         case 8:
             Console.WriteLine("Ferramenta em construção");
+            Console.WriteLine("Pressione qualquer tecla para continuar...");
+            Console.ReadKey();
             break;
         case 9:
             Console.WriteLine("Ferramenta em construção");
+            Console.WriteLine("Pressione qualquer tecla para continuar...");
+            Console.ReadKey();
             break;
         case 10:
             Console.WriteLine("Ferramenta em construção");
+            Console.WriteLine("Pressione qualquer tecla para continuar...");
+            Console.ReadKey();
             break;
         case 0:
             continuar = false;
             break;
         default:
             Console.WriteLine("Opcao invalida");
+            Console.WriteLine("Pressione qualquer tecla para continuar...");
+            Console.ReadKey();
             break;
     }
 }
