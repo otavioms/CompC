@@ -1,0 +1,82 @@
+## Ignore arquivos temporários, cache e configurações de usuário do Visual Studio
+.vs/
+*.vsidx
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Ignore diretórios de build
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Tt]emp/
+
+## Arquivos de cache do Visual Studio Code
+.vscode/
+
+## Arquivos de publicação e pacotes temporários
+*.publishsettings
+*.pubxml
+*.pubxml.user
+*.tmp
+
+## Pacotes NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+*.nuget.props
+*.nuget.targets
+
+## Arquivos de banco de dados locais
+*.mdf
+*.ldf
+*.ndf
+
+## Arquivos gerados por testes
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+## Arquivos gerados pelo Azure
+*.azurePubxml
+
+## Logs
+*.log
+
+## Arquivos de backup
+*~
+*.bak
+*.bkp
+*.tmp
+
+## Arquivos de configuração local do ReSharper / Rider
+_ReSharper*/
+*.DotSettings.user
+
+## Arquivos de cache do StyleCop
+StyleCop.Cache
+
+## Arquivos do Visual Studio para análise de performance
+*.vsp
+*.vspscc
+*.psess
+*.vspx
+*.sap
+
+## Arquivos do Visual Studio Profiler
+*.psess
+*.vsp
+*.vspx
+
+## Arquivos do Visual Studio Trace
+*.e2e
+
+## Diretórios de saída gerados por ferramentas
+out/
+artifacts/
+
+## Arquivos específicos de containers/dockers temporários
+*.pid
