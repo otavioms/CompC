@@ -43,7 +43,7 @@ while (continuar)
             ModuloAv1Item2.ExecutarClassificadorTIN();
             break;
         case 3:
-            ModuloAv1Item3.TerminaComB();
+            Console.WriteLine("Ferramenta em construção");
             break;
         case 4:
             Console.WriteLine("Ferramenta em construção");
