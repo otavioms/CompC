@@ -80,3 +80,6 @@ artifacts/
 
 ## Arquivos específicos de containers/dockers temporários
 *.pid
+*bin/
+ConsoleApp1/bin/
+ConsoleApp1/obj/
