@@ -43,14 +43,11 @@ TestResults/
 ## Arquivos gerados pelo Azure
 *.azurePubxml
 
-## Logs
+## Logs e backups
 *.log
-
-## Arquivos de backup
 *~
 *.bak
 *.bkp
-*.tmp
 
 ## Arquivos de configuração local do ReSharper / Rider
 _ReSharper*/
@@ -80,3 +77,10 @@ artifacts/
 
 ## Arquivos específicos de containers/dockers temporários
 *.pid
+
+## Configuração de execução local do .NET (opcional)
+*/Properties/launchSettings.json
+
+## Arquivos de sistema (Windows / macOS)
+Thumbs.db
+.DS_Store
