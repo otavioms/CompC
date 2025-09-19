@@ -40,7 +40,6 @@ namespace ConsoleApp1.Helpers
             int opcaoNumerica;
             if (string.IsNullOrWhiteSpace(opcao) || !int.TryParse(opcao, out  opcaoNumerica)) 
             {
-                // sim, isso e porque nao da para retornar null direto
                 return null;
             }
 
