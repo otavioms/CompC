@@ -25,9 +25,9 @@ namespace ConsoleApp1.Helpers
             Console.WriteLine("Digite uma cadeia");
             string? cadeia = Console.ReadLine();
 
-            if (cadeia == null)
+            if (string.IsNullOrEmpty(cadeia)|| string.IsNullOrWhiteSpace(cadeia))
             {
-                Console.WriteLine("NAO");
+                Console.WriteLine("Opção Invalida!");
             }
             else if (cadeia.Trim().ToLower().EndsWith("b"))
             {
