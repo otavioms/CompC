@@ -7,23 +7,35 @@ Cada módulo corresponde a um item avaliativo (AV1 e AV2).
 ---
 
 ## 👨‍🎓 Autores
-- **Otávio Medeiros** — Matrícula: 06003157
-- **Eduardo Esplinio** — Matrícula: XXXXX
-- **João Gabriel Soares** — Matrícula: XXXXX  
+- **Otávio Medeiros Silva** — Matrícula: 06003157
+- **Eduardo de Andrade Esplinio** — Matrícula: 06003445
+- **João Gabriel Soares de Andrade Simões** — Matrícula: 06003848
 
 ---
 
-## 📚 Estrutura do Projeto
-O projeto é um aplicativo de console com menu principal, onde cada opção corresponde a um módulo.  
+## ⚙️ Como executar
 
-**Regras técnicas seguidas:**
-- C# (.NET 9)
-- Nomes em português claros
-- Tipos explícitos
-- Uso do `System.Text.Json` para leitura de dados
-- Validação de entradas
-- Mensagens diretas e objetivas
-- Organização por módulos dentro do mesmo executável
+### Pré-requisitos
+- [.NET SDK 9.0+](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)  
+- Git instalado  
+
+### Passos
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/otavioms/CompC.git
+   cd CompC/ConsoleApp1
+
+2. Restaure os pacotes:
+   ```bash
+   dotnet restore
+
+3. Compile o projeto:
+   ```bash
+   dotnet build
+
+4. Execute o projeto:
+   ```bash
+   dotnet run
 
 ---
 
@@ -83,30 +95,4 @@ Próximos módulos a implementar:
     - Definir um AFD simples no código.  
     - Mostrar estado atual a cada símbolo consumido.  
     - Indicar aceitação ou rejeição no final.  
-
----
-
-## ⚙️ Como executar
-
-### Pré-requisitos
-- [.NET SDK 9.0+](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)  
-- Git instalado  
-
-### Passos
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/otavioms/CompC.git
-   cd CompC/ConsoleApp1
-
-2. Restaure os pacotes NuGet:
-   ```bash
-   dotnet restore
-
-3. Compile o projeto:
-   ```bash
-   dotnet build
-
-4. Execute o projeto:
-   ```bash
-   dotnet run
 
