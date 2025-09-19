@@ -13,7 +13,7 @@ namespace ConsoleApp1.Helpers
             Console.WriteLine("-------------------------");
             Console.WriteLine();
 
-            int opcao = EscolherFormula();
+            int? opcao = EscolherFormula();
             if (opcao == 1)
             {
                 FormulaUm();
@@ -31,14 +31,20 @@ namespace ConsoleApp1.Helpers
             Console.WriteLine("Pressione qualquer tecla para continuar...");
             Console.ReadKey();
         }
-        private static int EscolherFormula()
+        private static int? EscolherFormula()
         {
-            Console.WriteLine("Digite qual formula logica voce quer: ");
-            Console.WriteLine("Opcao 1: (P ^ Q) -> R");
-            Console.WriteLine("Opcao 2: (P -> Q) V R");
-            int opcao = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite qual formula logica você quer: ");
+            Console.WriteLine("1 - (P ^ Q) -> R");
+            Console.WriteLine("2 - (P -> Q) V R");
+            string? opcao = Console.ReadLine();
+            int opcaoNumerica;
+            if (string.IsNullOrWhiteSpace(opcao) || !int.TryParse(opcao, out  opcaoNumerica)) 
+            {
+                // sim, isso e porque nao da para retornar null direto
+                return null;
+            }
 
-            return opcao;
+            return opcaoNumerica;
         }
 
         private static void FormulaUm()
@@ -56,7 +62,7 @@ namespace ConsoleApp1.Helpers
             bool primeiraParte = primeiraExpressao && segundaExpressao;
 
             // Sim, isso parece redundadnte, mas para expressoes -> é necessario esse bloco pois
-            // A expressao "&& !" irá retornar false se ambos forem falso, o que não queremos
+            // A expressao "&& !" somente irá retornar false se ambos forem falso, o que não queremos
             if (primeiraParte && !terceiraExpressao)
             {
                 resultado = false;
@@ -68,22 +74,23 @@ namespace ConsoleApp1.Helpers
 
             if (resultado)
             {
-                Console.WriteLine("O resultado da formula e Verdadeiro");
+                Console.WriteLine("O resultado da formula é Verdadeiro");
             }
             else
             {
-                Console.WriteLine("O resultado da formula e Falso");
+                Console.WriteLine("O resultado da formula é Falso");
             }
 
             Console.WriteLine();
             Console.WriteLine("Quer imprimir a tabela verdade? (s/n): ");
             Console.WriteLine();
 
-            string escolha = Console.ReadLine();
+            string? escolha = Console.ReadLine();
+            escolha = escolha.Trim().ToLower();
             
             if ((escolha != "s") && (escolha != "n"))
             {
-                Console.WriteLine("ESCOLHA INVALIDA!");
+                Console.WriteLine("Escolha Inválida!");
             }
             else if (escolha == "s")
             {
@@ -92,11 +99,11 @@ namespace ConsoleApp1.Helpers
                 Console.WriteLine("V V V |   V V = V   V = V ");
                 Console.WriteLine("V V F |   V V = V   F = F ");
                 Console.WriteLine("V F V |   V F = F   V = V ");
-                Console.WriteLine("V F F |   V F = F   V = F ");
-                Console.WriteLine("F V V |   F F = V   V = V ");
-                Console.WriteLine("F V F |   F F = V   V = F ");
+                Console.WriteLine("V F F |   V F = F   F = V ");
+                Console.WriteLine("F V V |   F V = F   V = V ");
+                Console.WriteLine("F V F |   F V = F   F = V ");
                 Console.WriteLine("F F V |   F F = F   V = V ");
-                Console.WriteLine("F F F |   F F = F   V = F ");
+                Console.WriteLine("F F F |   F F = F   F = V ");
             }
             return;
         }
@@ -116,7 +123,7 @@ namespace ConsoleApp1.Helpers
             bool primeiraParte;
 
             // Sim, isso parece redundadnte, mas para expressoes -> é necessario esse bloco pois
-            // A expressao "&& !" irá retornar false se ambos forem falso, o que não queremos
+            // A expressao "&& !" somente irá retornar false se ambos forem falso, o que não queremos
             if (primeiraExpressao && !segundaExpressao)
             {
                 primeiraParte = false;
@@ -130,22 +137,25 @@ namespace ConsoleApp1.Helpers
 
             if (resultado)
             {
-                Console.WriteLine("O resultado da formula e Verdadeiro");
+                Console.WriteLine("O resultado da formula é Verdadeiro");
             }
             else
             {
-                Console.WriteLine("O resultado da formula e Falso");
+                Console.WriteLine("O resultado da formula é Falso");
             }
 
             Console.WriteLine();
             Console.WriteLine("Quer imprimir a tabela verdade? (s/n): ");
             Console.WriteLine();
 
-            string escolha = Console.ReadLine();
+            string? escolha = Console.ReadLine();
+            escolha = escolha.Trim().ToLower();
+
+            Console.WriteLine();
 
             if ((escolha != "s") && (escolha != "n"))
             {
-                Console.WriteLine("ESCOLHA INVALIDA!");
+                Console.WriteLine("Escolha Inválida!");
             }
             else if (escolha == "s")
             {
@@ -163,11 +173,11 @@ namespace ConsoleApp1.Helpers
             return;
         }
 
-        private static bool[] AdquirirExpressoes()
+        private static bool[]? AdquirirExpressoes()
         {
             bool[] expressoesBool =  new bool[3];
             string[] expressoesString = new string[3];
-            Console.WriteLine("Digite o valor da primeira expressao proposicional (verdadeiro ou falso): ");
+            Console.WriteLine("Digite o valor da primeira expressao proposicional 'P' (verdadeiro ou falso): ");
             string? primeiraExpressao = Console.ReadLine();
             
             if (!ValidadorExpressao(primeiraExpressao))
@@ -175,9 +185,9 @@ namespace ConsoleApp1.Helpers
                 Console.WriteLine("Expressao Invalida!");
                 return null;
             }
-            expressoesString.Append(primeiraExpressao.ToLower());
+            expressoesString[0] = primeiraExpressao.Trim().ToLower();
 
-            Console.WriteLine("Digite o valor da segunda expressao proposicional(verdadeiro ou falso): ");
+            Console.WriteLine("Digite o valor da segunda expressao proposicional 'Q' (verdadeiro ou falso): ");
             string? segundaExpressao = Console.ReadLine();
 
             if (!ValidadorExpressao(segundaExpressao))
@@ -185,9 +195,9 @@ namespace ConsoleApp1.Helpers
                 Console.WriteLine("Expressao Invalida!");
                 return null;
             }
-            expressoesString.Append(segundaExpressao.ToLower());
+            expressoesString[1] =segundaExpressao.Trim().ToLower();
 
-            Console.WriteLine("Digite o valor da terceira expressao proposicional(verdadeiro ou falso): ");
+            Console.WriteLine("Digite o valor da terceira expressao proposicional 'R' (verdadeiro ou falso): ");
             string? terceiraExpressao = Console.ReadLine();
 
             if (!ValidadorExpressao(terceiraExpressao))
@@ -195,7 +205,7 @@ namespace ConsoleApp1.Helpers
                 Console.WriteLine("Expressao Invalida!");
                 return null;
             }
-            expressoesString.Append(terceiraExpressao.ToLower());
+            expressoesString[2]=terceiraExpressao.Trim().ToLower();
 
             for (int i = 0; i < expressoesString.Length; i++)
             {
@@ -220,7 +230,7 @@ namespace ConsoleApp1.Helpers
             {
                 returnValue = false;
             }
-            if ((expressao != "falso") || (expressao != "verdadeiro"))
+            if ((expressao != "falso") && (expressao != "verdadeiro"))
             {
                 returnValue = false;
             }
