@@ -53,7 +53,6 @@ Itens já implementados:
    - Mostra resumo com acertos e erros.  
 
 3. **Programa de decisão: termina com ‘b’?**  
-   - Entrada: cadeia sobre Σ={a,b}.  
    - Verifica se a cadeia termina com ‘b’.  
    - Saída: **SIM** ou **NAO**.  
 
