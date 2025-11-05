@@ -52,29 +52,19 @@ while (continuar)
             ModuloAv1Item5.ExecutarReconhecedor();
             break;
         case 6:
-            Console.WriteLine("Ferramenta em construção");
-            Console.WriteLine("Pressione qualquer tecla para continuar...");
-            Console.ReadKey();
+            ModuloAv2Item1.ExecutarClassificadorProblemaInstancia();
             break;
         case 7:
-            Console.WriteLine("Ferramenta em construção");
-            Console.WriteLine("Pressione qualquer tecla para continuar...");
-            Console.ReadKey();
+            ModuloAv2Item2.ExecutarDecisores();
             break;
         case 8:
-            Console.WriteLine("Ferramenta em construção");
-            Console.WriteLine("Pressione qualquer tecla para continuar...");
-            Console.ReadKey();
+            ModuloAv2Item3.ExecutarReconhecedorNaoTermina();
             break;
         case 9:
-            Console.WriteLine("Ferramenta em construção");
-            Console.WriteLine("Pressione qualquer tecla para continuar...");
-            Console.ReadKey();
+            ModuloAv2Item4.ExecutarDetectorLoop();
             break;
         case 10:
-            Console.WriteLine("Ferramenta em construção");
-            Console.WriteLine("Pressione qualquer tecla para continuar...");
-            Console.ReadKey();
+            ModuloAv2Item5.ExecutarSimuladorAFD();
             break;
         case 0:
             continuar = false;
