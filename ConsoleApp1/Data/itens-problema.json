@@ -1,0 +1,12 @@
+[
+  {"Descricao": "Determinar se um grafo é conexo", "RespostaCorreta": "P"},
+  {"Descricao": "Verificar se o grafo G1 com 5 vértices é conexo", "RespostaCorreta": "I"},
+  {"Descricao": "Encontrar o caminho mais curto entre dois vértices", "RespostaCorreta": "P"},
+  {"Descricao": "Encontrar o caminho mais curto de A para B no grafo G2", "RespostaCorreta": "I"},
+  {"Descricao": "Ordenar uma lista de números", "RespostaCorreta": "P"},
+  {"Descricao": "Ordenar a lista [3,1,4,1,5,9,2,6]", "RespostaCorreta": "I"},
+  {"Descricao": "Verificar se um número é primo", "RespostaCorreta": "P"},
+  {"Descricao": "Verificar se o número 97 é primo", "RespostaCorreta": "I"},
+  {"Descricao": "Calcular o fatorial de um número", "RespostaCorreta": "P"},
+  {"Descricao": "Calcular o fatorial de 5", "RespostaCorreta": "I"}
+]
