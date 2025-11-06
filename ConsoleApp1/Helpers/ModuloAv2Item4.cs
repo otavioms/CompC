@@ -75,7 +75,8 @@ namespace ConsoleApp1.Helpers
 
             while (passo < limitePasso)
             {
-                Console.WriteLine($"Passo {passo + 1}: Estado = {atual}");
+                passo++;
+                Console.WriteLine($"Passo {passo}: Estado = {atual}");
                 
                 // Verificar se já visitamos este estado
                 if (estadosVisitados.Contains(atual))
@@ -97,18 +98,17 @@ namespace ConsoleApp1.Helpers
                 }
 
                 // Aplicar regra: par -> /2, ímpar -> 3n+1
+                int anterior = atual;
                 if (atual % 2 == 0)
                 {
                     atual = atual / 2;
-                    Console.WriteLine($"    {sequencia[passo]} é par -> {sequencia[passo]}/2 = {atual}");
+                    Console.WriteLine($"    {anterior} é par -> {anterior}/2 = {atual}");
                 }
                 else
                 {
                     atual = atual * 3 + 1;
-                    Console.WriteLine($"    {sequencia[passo]} é ímpar -> 3×{sequencia[passo]}+1 = {atual}");
+                    Console.WriteLine($"    {anterior} é ímpar -> 3×{anterior}+1 = {atual}");
                 }
-
-                passo++;
             }
 
             if (passo >= limitePasso && atual != 1)
