@@ -40,7 +40,6 @@ Cada módulo corresponde a um item avaliativo (AV1 e AV2).
 ---
 
 ## ✅ AV1 — Fundamentos práticos
-Itens já implementados:
 
 1. **Verificador de alfabeto e cadeia em Σ={a,b}**  
    - Entrada de símbolo e cadeia.  
@@ -70,8 +69,7 @@ Itens já implementados:
 
 ---
 
-## 🔜 AV2 — Decidibilidade, reconhecimento e modelos
-Próximos módulos a implementar:
+## ✅ AV2 — Decidibilidade, reconhecimento e modelos
 
 6. **Problema × Instância por JSON**  
    - Carregar frases em JSON e pedir ao usuário para classificar como **Problema (P)** ou **Instância (I)**.  
