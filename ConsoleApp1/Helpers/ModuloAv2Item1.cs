@@ -45,28 +45,29 @@ namespace ConsoleApp1.Helpers
 				Console.WriteLine($"Item {i + 1}/{total}");
 				Console.WriteLine($"Descrição: {itens[i].Descricao}");
 				Console.WriteLine();
-				Console.Write("Classificação (P/I): ");
 
-				string resposta = Console.ReadLine()?.ToUpper().Trim();
-
-				if (string.IsNullOrEmpty(resposta) || (resposta != "P" && resposta != "I"))
+				// Loop até o usuário fornecer uma entrada válida (P ou I)
+				string? resposta;
+				while (true)
 				{
+					Console.Write("Classificação (P/I): ");
+					resposta = Console.ReadLine()?.ToUpper().Trim();
+					if (!string.IsNullOrEmpty(resposta) && (resposta == "P" || resposta == "I"))
+						break;
+
 					Console.WriteLine("ENTRADA INVÁLIDA: Digite apenas P ou I.");
-					Console.WriteLine($"Resposta correta era: {itens[i].RespostaCorreta}");
-					erros++;
+				}
+
+				// Avaliar resposta válida
+				if (resposta == itens[i].RespostaCorreta)
+				{
+					Console.WriteLine("✓ CORRETO!");
+					acertos++;
 				}
 				else
 				{
-					if (resposta == itens[i].RespostaCorreta)
-					{
-						Console.WriteLine("✓ CORRETO!");
-						acertos++;
-					}
-					else
-					{
-						Console.WriteLine($"✗ INCORRETO. Resposta correta: {itens[i].RespostaCorreta}");
-						erros++;
-					}
+					Console.WriteLine($"✗ INCORRETO. Resposta correta: {itens[i].RespostaCorreta}");
+					erros++;
 				}
 
 				Console.WriteLine();
